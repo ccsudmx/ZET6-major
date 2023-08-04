@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "hal_core.h": "c",
+        "wifitocloud.h": "c",
+        "hal_wifitocloud.h": "c"
+    }
+}

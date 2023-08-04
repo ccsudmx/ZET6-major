@@ -1,0 +1,787 @@
+Dependencies for Project 'Template', Target 'zet6': (DO NOT MODIFY !)
+F (..\app\main.c)(0x64C49C00)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (..\app\hal_core.h)(0x647EE75A)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\usart.h)(0x5BC22EC4)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (..\bsp\usart3.h)(0x647F149A)
+I (..\bsp\bsp_timer3.h)(0x5BC22EC2)
+I (..\app\WiFiToCloud\app_cloud.h)(0x647EE75A)
+I (..\sys\debug_printf.h)(0x5BC22EBA)
+I (..\app\WiFiToCloud\WiFiToCloud.h)(0x614ED0EC)
+I (..\app\WiFiToCloud\HAL_WiFiToCloud.h)(0x5BC22EC2)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\app\WiFiToCloud\CloudReference.h)(0x64C3E2F9)
+I (..\app\hardwareVariables.h)(0x61B56372)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+I (..\bsp\usart2.h)(0x6139BB9F)
+I (..\RFID\rfid.h)(0x6480010D)
+I (..\Buzzer\Buzzer.h)(0x648177EC)
+F (..\app\hal_core.c)(0x647ED486)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\hal_core.o --omf_browse ..\obj\hal_core.crf --depend ..\obj\hal_core.d)
+I (..\app\hal_core.h)(0x647EE75A)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\usart.h)(0x5BC22EC4)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (..\bsp\usart3.h)(0x647F149A)
+I (..\bsp\bsp_timer3.h)(0x5BC22EC2)
+I (..\app\WiFiToCloud\app_cloud.h)(0x647EE75A)
+I (..\sys\debug_printf.h)(0x5BC22EBA)
+F (..\app\hal_core.h)(0x647EE75A)()
+F (..\app\hal_iic.c)(0x5BA21402)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\hal_iic.o --omf_browse ..\obj\hal_iic.crf --depend ..\obj\hal_iic.d)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\app\hal_iic.h)(0x613DC3EC)
+I (..\app\hal_core.h)(0x647EE75A)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\bsp\usart.h)(0x5BC22EC4)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (..\bsp\usart3.h)(0x647F149A)
+I (..\bsp\bsp_timer3.h)(0x5BC22EC2)
+I (..\app\WiFiToCloud\app_cloud.h)(0x647EE75A)
+F (..\app\hardwareVariables.h)(0x61B56372)()
+F (.\hardwareVariables.c)(0x61B56394)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\hardwarevariables.o --omf_browse ..\obj\hardwarevariables.crf --depend ..\obj\hardwarevariables.d)
+I (E:\keil_ARM\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\app\hardwareVariables.h)(0x61B56372)
+I (E:\keil_ARM\ARM\ARMCC\include\stdlib.h)(0x5475F300)
+F (..\app\WiFiToCloud\HAL_WiFiToCloud.c)(0x647EE75A)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\hal_wifitocloud.o --omf_browse ..\obj\hal_wifitocloud.crf --depend ..\obj\hal_wifitocloud.d)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\sys\debug_printf.h)(0x5BC22EBA)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (..\app\WiFiToCloud\WiFiToCloud.h)(0x614ED0EC)
+I (..\app\WiFiToCloud\HAL_WiFiToCloud.h)(0x5BC22EC2)
+I (..\app\WiFiToCloud\CloudReference.h)(0x64C3E2F9)
+I (..\app\hardwareVariables.h)(0x61B56372)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+F (..\app\WiFiToCloud\WiFiToCloud.c)(0x64B3B504)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\wifitocloud.o --omf_browse ..\obj\wifitocloud.crf --depend ..\obj\wifitocloud.d)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (..\app\WiFiToCloud\WiFiToCloud.h)(0x614ED0EC)
+I (..\app\WiFiToCloud\HAL_WiFiToCloud.h)(0x5BC22EC2)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (..\app\WiFiToCloud\CloudReference.h)(0x64C3E2F9)
+I (..\app\hardwareVariables.h)(0x61B56372)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+F (..\app\WiFiToCloud\app_cloud.c)(0x64C33400)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\app_cloud.o --omf_browse ..\obj\app_cloud.crf --depend ..\obj\app_cloud.d)
+I (..\app\WiFiToCloud\WiFiToCloud.h)(0x614ED0EC)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\app\WiFiToCloud\HAL_WiFiToCloud.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (..\app\WiFiToCloud\CloudReference.h)(0x64C3E2F9)
+I (..\app\hardwareVariables.h)(0x61B56372)
+I (..\sys\debug_printf.h)(0x5BC22EBA)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+I (..\app\WiFiToCloud\app_cloud.h)(0x647EE75A)
+I (..\app\hal_core.h)(0x647EE75A)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\bsp\usart.h)(0x5BC22EC4)
+I (..\bsp\usart3.h)(0x647F149A)
+I (..\bsp\bsp_timer3.h)(0x5BC22EC2)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+F (..\app\WiFiToCloud\app_cloud.h)(0x647EE75A)()
+F (..\app\WiFiToCloud\CloudReference.h)(0x64C3E2F9)()
+F (..\bsp\usart3.c)(0x647F368F)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\usart3.o --omf_browse ..\obj\usart3.crf --depend ..\obj\usart3.d)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\usart3.h)(0x647F149A)
+I (E:\keil_ARM\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+F (..\bsp\timer.c)(0x64807915)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+F (..\bsp\bsp_uart4.c)(0x647EFD74)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\bsp_uart4.o --omf_browse ..\obj\bsp_uart4.crf --depend ..\obj\bsp_uart4.d)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\bsp\timer.h)(0x647F149A)
+F (..\bsp\bsp_uart4.h)(0x613E0770)()
+F (..\bsp\bsp_rtc.c)(0x5BC22EC4)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\bsp_rtc.o --omf_browse ..\obj\bsp_rtc.crf --depend ..\obj\bsp_rtc.d)
+I (..\bsp\bsp_rtc.h)(0x5BC22EC4)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (..\sys\debug_printf.h)(0x5BC22EBA)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+F (..\bsp\bsp_timer3.c)(0x647EE7B1)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\bsp_timer3.o --omf_browse ..\obj\bsp_timer3.crf --depend ..\obj\bsp_timer3.d)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\bsp_timer3.h)(0x5BC22EC2)
+I (..\sys\debug_printf.h)(0x5BC22EBA)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+F (..\bsp\usart2.c)(0x647EFD66)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\usart2.o --omf_browse ..\obj\usart2.crf --depend ..\obj\usart2.d)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\usart2.h)(0x6139BB9F)
+I (E:\keil_ARM\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+F (..\bsp\usart2.h)(0x6139BB9F)()
+F (..\bsp\usart.c)(0x647EF688)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\usart.h)(0x5BC22EC4)
+F (..\lib\stm32f10x_it.c)(0x647F2DFB)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
+I (..\lib\stm32f10x_it.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\usart.h)(0x5BC22EC4)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\bsp\usart2.h)(0x6139BB9F)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (..\bsp\usart3.h)(0x647F149A)
+I (..\RFID\rfid.h)(0x6480010D)
+F (..\lib\core_cm3.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\core_cm3.o --omf_browse ..\obj\core_cm3.crf --depend ..\obj\core_cm3.d)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+F (..\lib\system_stm32f10x.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\system_stm32f10x.o --omf_browse ..\obj\system_stm32f10x.crf --depend ..\obj\system_stm32f10x.d)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\startup_stm32f10x_hd.s)(0x5BC22EC2)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_HD SETA 1"--list ..\obj\startup_stm32f10x_hd.lst --xref -o ..\obj\startup_stm32f10x_hd.o --depend ..\obj\startup_stm32f10x_hd.d)
+F (..\lib\STM32F10x_FWLib\src\misc.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\misc.o --omf_browse ..\obj\misc.crf --depend ..\obj\misc.d)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_bkp.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_bkp.o --omf_browse ..\obj\stm32f10x_bkp.crf --depend ..\obj\stm32f10x_bkp.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_cec.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_cec.o --omf_browse ..\obj\stm32f10x_cec.crf --depend ..\obj\stm32f10x_cec.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_crc.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_crc.o --omf_browse ..\obj\stm32f10x_crc.crf --depend ..\obj\stm32f10x_crc.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_dbgmcu.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_dbgmcu.o --omf_browse ..\obj\stm32f10x_dbgmcu.crf --depend ..\obj\stm32f10x_dbgmcu.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_exti.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_exti.o --omf_browse ..\obj\stm32f10x_exti.crf --depend ..\obj\stm32f10x_exti.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_gpio.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_gpio.o --omf_browse ..\obj\stm32f10x_gpio.crf --depend ..\obj\stm32f10x_gpio.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_rcc.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_rcc.o --omf_browse ..\obj\stm32f10x_rcc.crf --depend ..\obj\stm32f10x_rcc.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_rtc.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_rtc.o --omf_browse ..\obj\stm32f10x_rtc.crf --depend ..\obj\stm32f10x_rtc.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_tim.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_tim.o --omf_browse ..\obj\stm32f10x_tim.crf --depend ..\obj\stm32f10x_tim.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_usart.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_usart.o --omf_browse ..\obj\stm32f10x_usart.crf --depend ..\obj\stm32f10x_usart.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\lib\STM32F10x_FWLib\src\stm32f10x_pwr.c)(0x5BC22EC2)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\stm32f10x_pwr.o --omf_browse ..\obj\stm32f10x_pwr.crf --depend ..\obj\stm32f10x_pwr.d)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+F (..\drivers\LoRa\lora_app.c)(0x64C35797)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\lora_app.o --omf_browse ..\obj\lora_app.crf --depend ..\obj\lora_app.d)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+I (..\drivers\LoRa\lora_ui.h)(0x613C1075)
+I (..\bsp\usart2.h)(0x6139BB9F)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\app\hal_core.h)(0x647EE75A)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\bsp\usart.h)(0x5BC22EC4)
+I (..\bsp\bsp_uart4.h)(0x613E0770)
+I (..\bsp\usart3.h)(0x647F149A)
+I (..\bsp\bsp_timer3.h)(0x5BC22EC2)
+I (..\app\WiFiToCloud\app_cloud.h)(0x647EE75A)
+I (..\app\WiFiToCloud\WiFiToCloud.h)(0x614ED0EC)
+I (..\app\WiFiToCloud\HAL_WiFiToCloud.h)(0x5BC22EC2)
+I (..\app\WiFiToCloud\CloudReference.h)(0x64C3E2F9)
+I (..\app\hardwareVariables.h)(0x61B56372)
+F (..\drivers\LoRa\lora_ui.c)(0x613C0FB1)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\lora_ui.o --omf_browse ..\obj\lora_ui.crf --depend ..\obj\lora_ui.d)
+I (..\drivers\LoRa\lora_ui.h)(0x613C1075)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\usart.h)(0x5BC22EC4)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\bsp\usart2.h)(0x6139BB9F)
+I (..\bsp\timer.h)(0x647F149A)
+I (..\drivers\LoRa\lora_cfg.h)(0x5ADABBFD)
+I (..\drivers\LoRa\lora_app.h)(0x615444BD)
+F (..\sys\systick\systick.c)(0x613748BD)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\systick.o --omf_browse ..\obj\systick.crf --depend ..\obj\systick.d)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (..\sys\systick\systick.h)(0x5BC22EBA)
+F (..\sys\sys\sys.c)(0x5BC22EBA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+F (..\sys\delay.c)(0x5BC22EBA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
+I (..\sys\delay.h)(0x5BC22EBA)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+F (..\RFID\rfid.c)(0x64C49909)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\rfid.o --omf_browse ..\obj\rfid.crf --depend ..\obj\rfid.d)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (..\bsp\usart3.h)(0x647F149A)
+I (..\sys\sys\sys.h)(0x5BC22EBA)
+I (E:\keil_ARM\ARM\ARMCC\include\string.h)(0x5475F300)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\bsp\usart.h)(0x5BC22EC4)
+I (..\RFID\rfid.h)(0x6480010D)
+F (..\Buzzer\buzzer.c)(0x64818353)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sys\systick -I..\sys\sys -I..\sys\ -I..\bsp -I..\lib -I..\lib\STM32F10x_FWLib\inc -I..\app\WiFiToCloud -I..\app -I..\RFID -I..\drivers\LoRa -I..\Buzzer-I C:\Users\17464\Desktop\ZET6_Major\Project\RTE-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I E:\keil_ARM\ARM\CMSIS\Include-I E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DDEBUG_BOOT="0" -DDEBUG_SHELL="0"-o ..\obj\buzzer.o --omf_browse ..\obj\buzzer.crf --depend ..\obj\buzzer.d)
+I (..\lib\stm32f10x.h)(0x5BC22EC2)
+I (..\lib\core_cm3.h)(0x5BC22EC2)
+I (E:\keil_ARM\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\lib\system_stm32f10x.h)(0x5BC22EC2)
+I (..\lib\stm32f10x_conf.h)(0x6481496A)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x5BC22EC2)
+I (..\lib\STM32F10x_FWLib\inc\misc.h)(0x5BC22EC2)
+I (..\Buzzer\buzzer.h)(0x648177EC)
+I (E:\keil_ARM\ARM\ARMCC\include\stdio.h)(0x5475F300)

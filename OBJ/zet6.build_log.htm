@@ -1,0 +1,177 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1746415125@qq.com, 1, LIC=585FJ-URRQK-EVC1R-K1Z50-AGN93-F27MC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  E:\keil_ARM\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\17464\Desktop\ZET6_Major\Project\Template.uvprojx
+Project File Date:  06/08/2023
+
+<h2>Output:</h2>
+Rebuild target 'zet6'
+compiling main.c...
+..\app\hardwareVariables.h(19): warning:  #1295-D: Deprecated declaration recordOfflineMessage - give arg types
+  void recordOfflineMessage();
+..\app\hardwareVariables.h(21): warning:  #1295-D: Deprecated declaration readOfflineMessage - give arg types
+  void readOfflineMessage();
+..\app\main.c: 2 warnings, 0 errors
+compiling hal_core.c...
+compiling hal_iic.c...
+compiling hardwareVariables.c...
+..\app\hardwareVariables.h(19): warning:  #1295-D: Deprecated declaration recordOfflineMessage - give arg types
+  void recordOfflineMessage();
+..\app\hardwareVariables.h(21): warning:  #1295-D: Deprecated declaration readOfflineMessage - give arg types
+  void readOfflineMessage();
+hardwareVariables.c(142): warning:  #177-D: variable "p" was declared but never referenced
+        char* p, * sval;
+hardwareVariables.c(143): warning:  #177-D: variable "index" was declared but never referenced
+        int index = 0;
+hardwareVariables.c(164): warning:  #177-D: variable "p" was declared but never referenced
+        char* p, * sval;
+hardwareVariables.c(165): warning:  #177-D: variable "index" was declared but never referenced
+        int index = 0;
+hardwareVariables.c: 6 warnings, 0 errors
+compiling HAL_WiFiToCloud.c...
+..\app\hardwareVariables.h(19): warning:  #1295-D: Deprecated declaration recordOfflineMessage - give arg types
+  void recordOfflineMessage();
+..\app\hardwareVariables.h(21): warning:  #1295-D: Deprecated declaration readOfflineMessage - give arg types
+  void readOfflineMessage();
+..\app\WiFiToCloud\HAL_WiFiToCloud.c: 2 warnings, 0 errors
+compiling WiFiToCloud.c...
+..\app\hardwareVariables.h(19): warning:  #1295-D: Deprecated declaration recordOfflineMessage - give arg types
+  void recordOfflineMessage();
+..\app\hardwareVariables.h(21): warning:  #1295-D: Deprecated declaration readOfflineMessage - give arg types
+  void readOfflineMessage();
+..\app\WiFiToCloud\WiFiToCloud.c(302): warning:  #177-D: variable "TryGo" was declared but never referenced
+        uint8_t TryGo = 0;
+..\app\WiFiToCloud\WiFiToCloud.c(449): warning:  #68-D: integer conversion resulted in a change of sign
+                return -1;
+..\app\WiFiToCloud\WiFiToCloud.c(455): warning:  #68-D: integer conversion resulted in a change of sign
+                return -2;
+..\app\WiFiToCloud\WiFiToCloud.c(460): warning:  #68-D: integer conversion resulted in a change of sign
+                return -3;
+..\app\WiFiToCloud\WiFiToCloud.c(466): warning:  #68-D: integer conversion resulted in a change of sign
+                return -4;
+..\app\WiFiToCloud\WiFiToCloud.c(476): warning:  #68-D: integer conversion resulted in a change of sign
+                default: return -5;
+..\app\WiFiToCloud\WiFiToCloud.c: 8 warnings, 0 errors
+compiling app_cloud.c...
+..\app\hardwareVariables.h(19): warning:  #1295-D: Deprecated declaration recordOfflineMessage - give arg types
+  void recordOfflineMessage();
+..\app\hardwareVariables.h(21): warning:  #1295-D: Deprecated declaration readOfflineMessage - give arg types
+  void readOfflineMessage();
+..\app\WiFiToCloud\app_cloud.c(398): warning:  #550-D: variable "lightFlag1" was set but never used
+                int lightFlag1[2] = {0,0};
+..\app\WiFiToCloud\app_cloud.c(491): warning:  #550-D: variable "motorFlag1" was set but never used
+                int motorFlag1[3] = {0,0,0};
+..\app\WiFiToCloud\app_cloud.c(528): warning:  #550-D: variable "motorFlag2" was set but never used
+                int motorFlag2[3] = {0,0,0};
+..\app\WiFiToCloud\app_cloud.c(215): warning:  #177-D: variable "cmdid" was declared but never referenced
+        char *cmdid = NULL;
+..\app\WiFiToCloud\app_cloud.c(217): warning:  #177-D: variable "number_down" was declared but never referenced
+        uint8_t number_down=0;
+..\app\WiFiToCloud\app_cloud.c(607): warning:  #9-D: nested comment is not allowed
+  /*
+..\app\WiFiToCloud\app_cloud.c(630): warning:  #177-D: variable "erroCount" was declared but never referenced
+     static int8_t erroCount=0;
+..\app\WiFiToCloud\app_cloud.c(631): warning:  #550-D: variable "error" was set but never used
+     int8_t error=0;
+..\app\WiFiToCloud\app_cloud.c(632): warning:  #177-D: variable "str" was declared but never referenced
+     char str[50];
+..\app\WiFiToCloud\app_cloud.c: 11 warnings, 0 errors
+compiling usart3.c...
+compiling timer.c...
+compiling bsp_uart4.c...
+compiling bsp_rtc.c...
+compiling bsp_timer3.c...
+compiling usart2.c...
+compiling usart.c...
+compiling stm32f10x_it.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_pwr.c...
+compiling lora_app.c...
+..\app\hardwareVariables.h(19): warning:  #1295-D: Deprecated declaration recordOfflineMessage - give arg types
+  void recordOfflineMessage();
+..\app\hardwareVariables.h(21): warning:  #1295-D: Deprecated declaration readOfflineMessage - give arg types
+  void readOfflineMessage();
+..\drivers\LoRa\lora_app.c(208): warning:  #177-D: variable "num" was declared but never referenced
+        static u8 num=0;
+..\drivers\LoRa\lora_app.c(376): warning:  #223-D: function "USER_GetSteeringEngineJsonValue" declared implicitly
+                        i1 = (int) USER_GetSteeringEngineJsonValue(USART2_RX_BUF, "i1");  
+..\drivers\LoRa\lora_app.c(380): warning:  #223-D: function "USER_GetSteeringEngineJsonValue" declared implicitly
+                        i2 = (int)USER_GetSteeringEngineJsonValue(USART2_RX_BUF, "i2");
+..\drivers\LoRa\lora_app.c(385): warning:  #223-D: function "USER_GetSteeringEngineJsonValue" declared implicitly
+                        h1 = (int)USER_GetSteeringEngineJsonValue(USART2_RX_BUF, "h1");
+..\drivers\LoRa\lora_app.c(389): warning:  #223-D: function "USER_GetSteeringEngineJsonValue" declared implicitly
+                        h2 = (int)USER_GetSteeringEngineJsonValue(USART2_RX_BUF, "h2");
+..\drivers\LoRa\lora_app.c(394): warning:  #223-D: function "USER_GetSteeringEngineJsonValue" declared implicitly
+                        t1 = (int)USER_GetSteeringEngineJsonValue(USART2_RX_BUF, "t1");
+..\drivers\LoRa\lora_app.c(398): warning:  #223-D: function "USER_GetSteeringEngineJsonValue" declared implicitly
+                        t2 = (int)USER_GetSteeringEngineJsonValue(USART2_RX_BUF, "t2");
+..\drivers\LoRa\lora_app.c(403): warning:  #223-D: function "USER_GetSteeringEngineJsonValue" declared implicitly
+                        s1 = (int)USER_GetSteeringEngineJsonValue(USART2_RX_BUF, "s1");
+..\drivers\LoRa\lora_app.c(407): warning:  #223-D: function "USER_GetSteeringEngineJsonValue" declared implicitly
+                        s2 = (int)USER_GetSteeringEngineJsonValue(USART2_RX_BUF, "s2");
+..\drivers\LoRa\lora_app.c(371): warning:  #177-D: variable "TxetBuf" was declared but never referenced
+                uint8_t TxetBuf[128];
+..\drivers\LoRa\lora_app.c(374): warning:  #550-D: variable "sensorFlag" was set but never used
+                int sensorFlag = 0;
+..\drivers\LoRa\lora_app.c: 13 warnings, 0 errors
+compiling lora_ui.c...
+compiling systick.c...
+compiling sys.c...
+..\sys\sys\sys.c(346): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if((bHex>=0)&&(bHex<=9))
+..\sys\sys\sys.c: 1 warning, 0 errors
+compiling delay.c...
+compiling rfid.c...
+..\RFID\rfid.c(75): warning:  #177-D: variable "idout" was declared but never referenced
+        unsigned char idout[6];
+..\RFID\rfid.c: 1 warning, 0 errors
+compiling buzzer.c...
+..\Buzzer\buzzer.c(5): warning:  #177-D: variable "PrescalerValue" was declared but never referenced
+  static uint16_t PrescalerValue = 0;
+..\Buzzer\buzzer.c: 1 warning, 0 errors
+linking...
+Program Size: Code=31528 RO-data=932 RW-data=640 ZI-data=9760  
+FromELF: creating hex file...
+"..\OBJ\zet6.axf" - 0 Error(s), 45 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\17464\Desktop\ZET6_Major\Project\RTE
+  E:\keil_ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
