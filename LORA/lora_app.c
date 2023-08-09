@@ -5,6 +5,16 @@
 #include "delay.h"
 #include "stdio.h"
 #include "fan.h"
+#include "my_json.h"
+ Json Fan=
+{
+	.name="FAN1",
+	.status=0,
+	.value=0,
+	.len=4
+};
+
+
 //设备参数初始化(具体设备参数见lora_cfg.h定义)
 _LoRa_CFG LoRa_CFG=
 {
@@ -189,21 +199,15 @@ void LoRa_Set(void)
 	
 }
 
-u8 Dire_Date[]={0x11,0x22,0x33,0x44,0x55};//定向传输数据
-u8 date[30]={0};//定向数组
 
-#define Dire_DateLen sizeof(Dire_Date)/sizeof(Dire_Date[0])
-extern u32 obj_addr;//记录用户输入目标地址
-extern u8 obj_chn;//记录用户输入目标信道
 u8 Tran_Data[200]={0};//透传数组
 
-u8 wlcd_buff[10]={0}; //LCD显示字符串缓冲区
+
 //Lora模块发送数据
 void LoRa_SendData(char* message)
 {   	
-  u16 addr;
-	u8 chn;
-	u16 i=0; 
+   
+
 	
 	Lora_mode=2;//标记"发送状态"
 	
@@ -213,240 +217,62 @@ void LoRa_SendData(char* message)
 		u3_printf("%s\r\n",Tran_Data);
 
 		printf("Send：%s\r\n",Tran_Data);//显示发送的数据	
-	}else if(LoRa_CFG.mode_sta == LORA_STA_Dire)//定向传输
-	{
-		
-		addr = (u16)obj_addr;//目标地址
-		chn = obj_chn;//目标信道
-		
-		date[i++] =(addr>>8)&0xff;//高位地址
-		date[i++] = addr&0xff;//低位地址
-		date[i] = chn;//无线信道
-		
-		for(i=0;i<Dire_DateLen;i++)//数据写到发送BUFF
-		{
-			date[3+i] = Dire_Date[i];
-		}	
-		for(i=0;i<(Dire_DateLen+3);i++)
-		{
-			while(USART_GetFlagStatus(USART3,USART_FLAG_TC)==RESET);//循环发送,直到发送完毕   
-			USART_SendData(USART3,date[i]); 
-		}	
-		
-        //将十六进制的数据转化为字符串打印在lcd_buff数组
-		sprintf((char*)wlcd_buff,"%x %x %x %x %x %x %x %x",
-				date[0],date[1],date[2],date[3],date[4],date[5],date[6],date[7]);
-		
-	    Dire_Date[4]++;//Dire_Date[4]数据更新
-		
 	}
+
 			
 }
 
-u8 rlcd_buff[10]={0}; //LCD显示字符串缓冲区
 
-
-
-/*******************************************************************
-*函数：char *USER_GetSteeringEngineJsonValue(char *cJson, char *Tag)
-*功能：json为字符串序列，将json格式中的目标对象Tag对应的值字符串转换为数值
-*输入：
-		char *cJson json字符串
-		char *Tag 要操作的对象标签
-*输出：返回数值
-*特殊说明：用户可以在此基础上改造和扩展该函数，这里只是个简单的DEMO
-*******************************************************************/
-
-uint8_t USER_GetSteeringEngineJsonValue(char *cJson, char *Tag)
-{
-	char *target = NULL;
-	//char *str = NULL;
-	static char temp[10];
-	uint8_t len=0;
-	uint8_t value=0;
-	int8_t i=0;
-	
-	memset(temp, 0x00, 128);
-	sprintf(temp,"\"%s\":\"",Tag);
-	//printf("取值内部%s %s %s %s",cJson,Tag,USART3_RX_BUF,temp);
-	target=strstr((const char *)cJson, (const char *)temp);
-	if(target == NULL)
-	{
-		printf("空字符！\r\n");
-		return NULL;
-	}
-	i=strlen((const char *)temp);
-	target=target+i;
-	memset(temp, 0x00, 128);
-	for(i=0; i<10; i++, target++)//数值超过10个位为非法，由于2^32=4294967296
-	{
-		if((*target<='9')&&(*target>='0'))
-		{
-			temp[i]=*target;
-		}
-		else
-		{
-			break;
-		}
-	}
-	//str=strstr((const char *)target, (const char *)"\",");
-	
-	temp[i+1] = '\0';
- //printf("数值str=%s\r\n",temp);
-	//printf("数值str=%s\r\n",target);
- len=strlen((const char *)target);
-	for(i=0; i<len;i++)
-    {
-	// printf("数值str[%d]=0x%x  \r\n",i,*(target+i));
-	}
-	len=strlen((const char *)temp);
-	switch(len)
-	{
-		case(1):value=temp[0]-'0';break;
-		case(2):value=temp[1]-'0'+(temp[0]-'0')*10;break;
-		case(3):value=temp[2]-'0'+(temp[0]-'0')*100+(temp[1]-'0')*10;break;
-		default:break;
-	}
-	
-	
-	//printf("数值value=%d\r\n",value);
-	return value;
-}
-volatile int recFlag=0;
 
 //Lora模块接收数据
 void LoRa_ReceData(void)
 {
-//    u16 i=0;
-        u16 len=0;
-		int count=0;
+
+	    int count=0;
 		u8 msg[1024];
     
 	if(USART3_RX_STA&0x8000)
-	{  		
-			
+	{  		 
+
 			while(USART3_RX_BUF[count]!='\0')
 			{
 			    msg[count]=USART3_RX_BUF[count];
-				  count++;
-			
+				count++;			
 			}
 			count++;
 			msg[count]='\0';
-			printf("已经接收到数据了\r\n");
-//		len = USART3_RX_STA&0X7FFF;
-//		USART3_RX_BUF[len]=0;//添加结束符
-   	//	USART3_RX_STA=0;
-
-//		for(i=0;i<len;i++)
-//		{
-//			while(USART_GetFlagStatus(USART1,USART_FLAG_TC)==RESET); //循环发送,直到发送完毕   
-//			USART_SendData(USART1,USART3_RX_BUF[i]); 
-//		}
-		if(LoRa_CFG.mode_sta==LORA_STA_Tran)//透明传输
-		{	
-			lora_at_response(1);//显示接收到的数据
-		}
-		int recFlag = 0;
-		//数据解析
-		//arr+1~0
-		//占空比计算：fan0pwmval/arr+1;  最大也就是5500/7200
-		//FAN占空比大于%50差不多就不转了
-		//LIGHT占空比可以从%0~%100
-		//FAN1
-		if(strstr((const char *)USART3_RX_BUF, (const char *)"fanStatus1") != NULL){
-		
-			//printf("刚进来msg=%s\r\n",msg);
-			recFlag++;
-			fanStatus1 = (int) USER_GetSteeringEngineJsonValue((char *)msg, (char *)"fanStatus1");  
-			//char temp[20];
-			//sprintf(temp,"%d,%d",fanStatus1,fanSpeed1);
-			//printf("%s",temp);
-			//printf("出来后%s",USART3_RX_BUF);
-			if(fanStatus1 == 0){
-				TIM_SetCompare1(TIM1,100*72);
-				LoRa_SendData("FAN1 OFF\r\n");
-				printf("FAN1 OFF\r\n");
+            
+		USART3_RX_BUF[USART3_RX_STA&0X7FFF]=0;//添加结束符
+        USART3_RX_STA=0;
+	
+		if(strstr((const char *)msg, (const char *)"FAN1") != NULL){
 		    
+		       JSON_LORA((char *)msg,&Fan);
+            if(Fan.status)
+            {
+			   TIM_SetCompare1(TIM1,(100-Fan.value)*72);
+			   LoRa_SendData("FAN1 ON!");
+				                         
+            }
+            else {
+              TIM_SetCompare1(TIM1,100*72);
+              LoRa_SendData("FAN1 OFF\r\n");
+                  }
+                  printf("FAN1_NEW_State: %s:%d:%d\r\n",Fan.name,Fan.status,Fan.value);
+                
 			}
-			else if(fanStatus1 == 1){
-				TIM_SetCompare1(TIM1,fanVal1);
-				LoRa_SendData("FAN1 ON\r\n");
-				printf("FAN1 ON\r\n");
-			}
-		}
-		if(strstr((const char *)msg, (const char *)"fanSpeed1") != NULL){
-			recFlag++;
-			fanSpeed1 = USER_GetSteeringEngineJsonValue((char *)msg, (char *)"fanSpeed1");
-			
-			fanVal1 = (int)(100 - fanSpeed1)*72;
-			if(fanStatus1 == 1)
-				TIM_SetCompare1(TIM1,fanVal1);	  //通道比较值   修改TIM1_CCR1 占空比
-			
-			printf("FAN1 = %d%%\r\n", fanSpeed1);
-		}
-		
-		//FAN2
-		if(strstr((const char *)USART3_RX_BUF, (const char *)"fanStatus2") != NULL){
-			recFlag++;
-			fanStatus2 = USER_GetSteeringEngineJsonValue((char *)USART3_RX_BUF, (char *)"fanStatus2");
-			
-			if(fanStatus2 == 0){
-				TIM_SetCompare4(TIM1,100*72);
-				printf("FAN2 OFF\r\n");
-			}
-			else if(fanStatus2 == 1){
-				TIM_SetCompare4(TIM1,fanVal2);
-				printf("FAN2 ON\r\n");
-			}
-		}
-		if(strstr((const char *)USART3_RX_BUF, (const char *)"fanSpeed2") != NULL){
-			recFlag++;
-			fanSpeed2 = USER_GetSteeringEngineJsonValue((char *)USART3_RX_BUF, (char *)"fanSpeed2");
-			
-			fanVal2 = (int)(100 - fanSpeed2)*72;
-			
-			if(fanStatus2 == 1)
-				TIM_SetCompare4(TIM1,fanVal2);	  //通道比较值   修改TIM1_CCR1 占空比
-			printf("FAN2 = %d%%\r\n", fanSpeed2);
-		}
-		
-		if(recFlag > 0){
-			//确认消息回发
-			LoRa_SendData("FanRecOK");
-			recFlag=0;
-		}
-
-		if(strstr((const char *)msg, (const char *)"lightStatus") != NULL){
-			recFlag++;
-			lightStatus = USER_GetSteeringEngineJsonValue((char *)msg, (char *)"lightStatus");
-			
-			if(lightStatus == 0){
-				TIM_SetCompare4(TIM1,100*72);
-				printf("LIGHT OFF\r\n");
-			}
-			else if(lightStatus == 1){
-				TIM_SetCompare4(TIM1,lightVal);
-				printf("LIGHT ON\r\n");
-			}
-		}
-		if(strstr((const char *)msg, (const char *)"lightPWM") != NULL){
-			recFlag++;
-			lightPWM = USER_GetSteeringEngineJsonValue((char *)msg, (char *)"lightPWM");
-			
-			lightVal = (int)(100 - lightPWM)*72;
-			
-			if(lightStatus == 1)
-				TIM_SetCompare4(TIM1,lightVal);	  //通道比较值   修改TIM1_CCR1 占空比
-			printf("LIGHT = %d%%\r\n", lightPWM);
-		}
-		if(recFlag > 0){
-			//确认消息回发
-			LoRa_SendData("LightRecOK");
-		}
+        
+         if(strstr((const char *)msg, (const char *)"FAN1") != NULL)
+         {
+         
+            
+         
+         
+         }
+       
 		
 	
-		memset((char*)USART3_RX_BUF,0x00,len);//串口接收缓冲区清0
+		memset((char*)USART3_RX_BUF,0x00,USART3_MAX_RECV_LEN);//串口接收缓冲区清0
 		memset((char *)msg,0x00,count);
 		count=0;
 	}

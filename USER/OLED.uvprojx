@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\STM32F10x_FWLib\inc;..\USER;..\HARDWARE\OLED;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\GY_302;..\DHT11;..\LoRa;..\TIMER;..\MQ-2;..\USART3;..\FAN;..\rtc</IncludePath>
+              <IncludePath>..\CORE;..\STM32F10x_FWLib\inc;..\USER;..\HARDWARE\OLED;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\GY_302;..\DHT11;..\LoRa;..\TIMER;..\MQ-2;..\USART3;..\FAN;..\rtc;..\JSON</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -812,6 +812,16 @@
               <FileName>bsp_rtc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\rtc\bsp_rtc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>JSON</GroupName>
+          <Files>
+            <File>
+              <FileName>my_json.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\JSON\my_json.c</FilePath>
             </File>
           </Files>
         </Group>

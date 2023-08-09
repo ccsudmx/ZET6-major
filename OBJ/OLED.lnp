@@ -44,6 +44,7 @@
 "..\obj\bsp_calendar.o"
 "..\obj\bsp_date.o"
 "..\obj\bsp_rtc.o"
+"..\obj\my_json.o"
 --strict --scatter "..\OBJ\OLED.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

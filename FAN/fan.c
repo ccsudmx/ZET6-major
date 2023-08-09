@@ -3,26 +3,16 @@
 
 
 int SendFlag = 0;
-int timesFlag = 0;
 
-//可调灯
-volatile int lightStatus = 0;
-volatile int lightPWM = 0;
-volatile int lightVal = 0;
-//风扇 x2
-volatile int fanStatus1 = 0;
-volatile int fanSpeed1 = 0;
-volatile int fanVal1 = 0;
-volatile int fanStatus2 = 0;
-volatile int fanSpeed2 = 0;
-volatile int fanVal2 = 0;
+
+
 
 //温湿度传感器
-volatile u8 humidity = 0,temperature = 0;
+ u8 humidity = 0,temperature = 0;
 //光照传感器 x2
-volatile int illumination = 0;
+ int illumination = 0;
 //烟雾传感器 x2
-volatile int smoke = 0;
+ int smoke = 0;
 
 //void demo()
 //{

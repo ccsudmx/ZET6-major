@@ -37,3 +37,4 @@
 ..\obj\lora_app.o: ..\SYSTEM\delay\delay.h
 ..\obj\lora_app.o: E:\keil_ARM\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\lora_app.o: ..\FAN\fan.h
+..\obj\lora_app.o: ..\JSON\my_json.h
