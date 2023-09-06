@@ -40,6 +40,7 @@ void OLED_ScrollDisplay(u8 num,u8 space,u8 mode);
 void OLED_ShowPicture(u8 x,u8 y,u8 sizex,u8 sizey,u8 BMP[],u8 mode);
 void OLED_Init(void);
 void show_led(char * msg, char * msg1,char * msg2,char * msg3);
+void show_rtc(char *msg);
 
 #endif
 

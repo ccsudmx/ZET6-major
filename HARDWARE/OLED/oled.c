@@ -9,30 +9,38 @@ void show_led(char * msg, char * msg1,char * msg2,char * msg3)
     
     
   //¹âÕÕ
-    OLED_ShowChinese(0,0,4,16,1); //ºº×Ö¸ô16
-	OLED_ShowChinese(16,0,5,16,1);
-	
-  //ÑÌÎíÈÜ¶È
-	OLED_ShowChinese(0,16,8,16,1); //ºº×Ö¸ô16
-	OLED_ShowChinese(16,16,9,16,1);
-    OLED_ShowChinese(32,16,10,16,1);
-	OLED_ShowChinese(48,16,11,16,1);
+//    OLED_ShowChinese(0,0,4,16,1); //ºº×Ö¸ô16
+//	OLED_ShowChinese(16,0,5,16,1);
+//	
+//  //ÑÌÎíÈÜ¶È
+//	OLED_ShowChinese(0,16,8,16,1); //ºº×Ö¸ô16
+//	OLED_ShowChinese(16,16,9,16,1);
+//    OLED_ShowChinese(32,16,10,16,1);
+//	OLED_ShowChinese(48,16,11,16,1);
 	
 	//ÎÂ¶È
 	OLED_ShowChinese(0,32,0,16,1); //ºº×Ö¸ô16
 	OLED_ShowChinese(16,32,1,16,1);
-	
-	//Êª¶È	
-	OLED_ShowChinese(0,48,2,16,1); //ºº×Ö¸ô16
-	OLED_ShowChinese(16,48,3,16,1);
+//	
+//	//Êª¶È	
+//	OLED_ShowChinese(0,48,2,16,1); //ºº×Ö¸ô16
+//	OLED_ShowChinese(16,48,3,16,1);
     
-    OLED_ShowString(32,0,(unsigned char *)msg,16,1);//16*16		 
-	OLED_ShowString(64,16,(unsigned char *)msg1,16,1);//16*16	  
+//    OLED_ShowString(32,0,(unsigned char *)msg,16,1);//16*16		 
+//	OLED_ShowString(64,16,(unsigned char *)msg1,16,1);//16*16	  
 	OLED_ShowString(32,32,(unsigned char *)msg2,16,1);//16*16	 
-	OLED_ShowString(32,48,(unsigned char *)msg3,16,1);//16*16		
-	OLED_Refresh();
-    OLED_Clear();
+//	OLED_ShowString(32,48,(unsigned char *)msg3,16,1);//16*16		
+//	OLED_Refresh();
+  //  OLED_Clear();
 
+
+}
+void show_rtc(char *msg)
+{
+   
+    OLED_ShowString(0,0,(unsigned char *)msg,16,1);//16*16		
+    OLED_Refresh();
+    OLED_Clear();
 
 }
 //·´ÏÔº¯Êý

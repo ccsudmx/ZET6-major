@@ -32,3 +32,4 @@
 ..\obj\bsp_rtc.o: ..\rtc\bsp_calendar.h
 ..\obj\bsp_rtc.o: ..\rtc\bsp_date.h
 ..\obj\bsp_rtc.o: E:\keil_ARM\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\bsp_rtc.o: ..\JSON\my_json.h

@@ -11,9 +11,22 @@
 	.name="FAN1",
 	.status=0,
 	.value=0,
-	.len=4
+	
 };
+Json tep={
+  .name="TH",
+  .status=1,
+  .value=0,
+   
 
+};
+Json time={
+    .name="TIME",
+    .hours=0,
+    .min=0,
+    .sec=0   
+
+};
 
 //设备参数初始化(具体设备参数见lora_cfg.h定义)
 _LoRa_CFG LoRa_CFG=
@@ -214,7 +227,7 @@ void LoRa_SendData(char* message)
 	if(LoRa_CFG.mode_sta == LORA_STA_Tran)//透明传输
 	{
 		sprintf((char*)Tran_Data,"%s",message);
-		u3_printf("%s\r\n",Tran_Data);
+		u3_printf("%s",Tran_Data);
 
 		printf("Send：%s\r\n",Tran_Data);//显示发送的数据	
 	}
@@ -222,7 +235,7 @@ void LoRa_SendData(char* message)
 			
 }
 
-
+int TH=0;
 
 //Lora模块接收数据
 void LoRa_ReceData(void)
@@ -262,14 +275,22 @@ void LoRa_ReceData(void)
                 
 			}
         
-         if(strstr((const char *)msg, (const char *)"FAN1") != NULL)
-         {
-         
+        if(strstr((const char *)msg,(const char *) "TH")!=NULL)
+        {
             
-         
-         
-         }
-       
+           JSON_LORA((char *)msg,&tep);
+           TH=tep.value;
+        
+        
+        }
+        if(strstr((const char *)msg,(const char *)"TIME")!=NULL)
+        {
+           
+              Json_time((char *)msg,&time);
+        
+        
+        }
+      
 		
 	
 		memset((char*)USART3_RX_BUF,0x00,USART3_MAX_RECV_LEN);//串口接收缓冲区清0
